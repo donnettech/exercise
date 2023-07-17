@@ -91,7 +91,6 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-
     <distributionManagement>
         <repository>
             <id>nexus</id>
@@ -104,6 +103,7 @@
             <name>Landmark Technologies Snapshot Nexus Repository </name>
             <url>http://3.92.61.57:8181/mylandmarktech/repository/tesla-snapshots/</url>
         </snapshotRepository>
+
     </distributionManagement>
 
     <build>
@@ -143,14 +143,14 @@
                     <wtpContextName>maven-web-application</wtpContextName>
                 </configuration>
             </plugin>
-            
-            <!-- Sonar Maven plugin configuration -->
+
+            <!-- SonarQube Maven Plugin -->
             <plugin>
                 <groupId>org.sonarsource.scanner.maven</groupId>
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.9.1.2184</version>
             </plugin>
+
         </plugins>
     </build>
-
 </project>
